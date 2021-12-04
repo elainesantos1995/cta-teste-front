@@ -1,6 +1,7 @@
 # CtaTesteFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+Try implements this dashboard prototype: https://xd.adobe.com/view/1ff7f15c-8757-4fdb-99dc-8a9feb18f7f3-4aa4/
 
 ## Development server
 
