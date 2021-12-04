@@ -1,0 +1,127 @@
+
+    :host {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 14px;
+      color: #333;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  
+    p {
+      margin: 0;
+    }
+
+    span {
+      color: rgb(1, 41, 26);
+      font-weight: bolder;
+      margin-left: 1%;
+    }
+  
+    .spacer {
+      margin-left: 2%;
+      flex: 1;
+      color: rgb(1, 41, 26);
+    }
+  
+    .toolbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      background-color: #f3f5f7;
+      color: white;
+    }
+  
+    .menu {
+      margin: 0%;
+      padding: 0%;
+      width: 15%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(253, 253, 253);
+    }
+  
+    .content {
+      top: 130%; 
+      margin: 0%;
+      height: 100%;
+      padding: 0%;
+      width: 85%;
+      flex-direction: column;
+      align-items: center;
+      float: right; 
+      background-color: #f3f5f7; 
+      margin-top: 1%;
+    }
+  
+    a{
+      color: lightgray;
+    }
+  
+   a:hover {
+      background-color: white;
+      text-decoration: none;
+    }
+  
+    dt{
+      padding: 4%; color: darkgray; align-items: center;
+    }
+  
+   dt:hover{
+    background-color: rgb(12, 177, 163);
+    color: #fff;
+    text-decoration: none;
+   }
+  
+   button{
+     background-color: rgb(216, 143, 9);
+     border-radius: 10px;
+     border-color: rgb(216, 143, 9);
+     color: #fff;
+     float: right;
+     padding: 10px;
+   }
+
+   .card{
+    width: 230px; 
+    height: 30px; 
+    border-radius: 5%; 
+    display: inline-block; 
+    margin-top: 1%; 
+    margin-right: 3%; 
+    margin-bottom: 4%;
+    background-color: rgb(1, 41, 26);
+    padding-top: 2%;
+    padding-bottom: 4%;
+   }
+  
+   .text-card-title{
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 8%;
+    font-size: xx-small;
+    margin-bottom: 4%;
+   }
+
+   .text-card-value{
+    color: rgb(216, 143, 9);
+    border-color: rgb(216, 143, 9);
+    font-weight: 400;
+    text-align: center;
+    font-size: x-large;
+   }
+
+   .dashboard{
+    color: darkgray; font-weight: 500; margin-bottom: 0%;
+   }
+
+   .resumo{
+    color: darkgray; font-weight: lighter; margin-top: 0%;
+   }
+
+   .material-icons.md-18 { font-size: 18px; }

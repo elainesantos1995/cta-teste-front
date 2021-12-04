@@ -1,0 +1,92 @@
+
+    <div class="toolbar">
+      <h3>
+      <span>RELATÓRIOS</span></h3>
+        <div class="spacer"></div>
+    </div>
+
+    <div style="height: 2px;"></div>
+    
+    <div style="width: 100%; margin-top: 2%;">  
+      <div class="menu" style="float: left;">     
+        <dl style="background-color: white;">
+          <a><dt style="padding: 6%; color: darkgray; background-color: rgb(1, 41, 26)">FECHAR MENU  <mat-icon aria-hidden="false" color="green">cancel</mat-icon></dt></a>
+          <a><dt><span class="material-icons md-18">dashboard</span>   Dashboard</dt></a>
+          <a><dt><span class="material-icons md-18">domain</span>  Empresas</dt></a>
+          <a><dt><span class="material-icons md-18">people</span>   Motoristas</dt></a>
+          <a><dt><span class="material-icons md-18">person</span>   Frentistas</dt></a>
+        </dl>
+      </div>   
+  
+      <div class="content">
+        <div style="margin-left: 2%;">
+          <div style="width: 50%; display: inline-block;">
+            <h2 id="dashboard" class="dashboard">
+              <mat-icon aria-hidden="false" color="green">dashboard</mat-icon>Dashboard</h2>
+            <h3 id="resumo" class="resumo" >Resumo do Sistema</h3>
+          </div>
+          <div style="width: 50%; display: inline-block; margin-left: 0%;">
+            <button>CONFIGURAR DASHBOARD  <mat-icon aria-hidden="false" color="blue">settings</mat-icon></button>
+          </div>
+        </div>  
+      <div>
+      
+    </div>
+
+  <div class="spacer">
+    <div class="card">
+      <div>
+        <p class="text-card-title"><mat-icon>bar_chart</mat-icon>{{  this.informations[0].title}}</p> 
+        <p class="text-card-value">{{this.informations[0].value}}</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p class="text-card-title"><mat-icon>bar_chart</mat-icon>{{  this.informations[1].title}}</p>     
+        <p class="text-card-value">{{this.informations[1].value}}</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p class="text-card-title"><mat-icon>bar_chart</mat-icon>{{  this.informations[2].title}}</p>     
+        <p class="text-card-value">{{this.informations[2].value}}</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>        
+        <p class="text-card-title"><mat-icon>bar_chart</mat-icon>{{this.informations[3].title}}</p>     
+        <p class="text-card-value">{{this.informations[3].value}}</p>
+      </div>
+    </div>
+</div>
+  
+ <div *ngIf="chart != null && chart != undefined " >
+  <div class="flex" style="width: 500px; height: 400px;">
+    <div class="flex-item">
+      <div style="display: block;">
+        <canvas baseChart width="400" height="200"
+        [datasets]="lineChartData"
+        [options]="lineChartOptions"                   
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [colors]="lineChartColors"
+        [labels]="lineChartLegend"         
+        ></canvas>
+      </div>
+    </div>
+    <div class="flex-item">
+      <table class="table table-responsive table-condensed">
+        <tr>
+          <th style="font-size: smaller; font-weight: 500; color: gray;" *ngFor="let label of lineChartLabels">{{label}}</th>
+        </tr>
+        <tr *ngFor="let d of lineChartData; let i=index" [class]="'line-'+i">
+          <td *ngFor="let label of lineChartLabels; let j=index"></td>
+        </tr>
+      </table> 
+    </div>
+</div>
+
+</div>
